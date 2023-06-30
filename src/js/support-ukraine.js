@@ -68,7 +68,7 @@ function createSlide(fundsData) {
 function createSlideMarkup(fund, index) {
   const paddedIndex = String(index + 1).padStart(2, '0');
   
-  return `<div class="swiper-slide">
+  return `<li class="swiper-slide">
           <div class="fund-item">
             <span class="fund-item-number">${paddedIndex}</span>
             <a href="${fund.url}" target="_blank">
@@ -79,7 +79,7 @@ function createSlideMarkup(fund, index) {
               />
             </a>
           </div>
-        </div>`;
+        </li>`;
 }
 
 
