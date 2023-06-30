@@ -1,0 +1,131 @@
+.support-funds-section {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.support-funds-container {
+    position: relative;
+    padding: 24px 40px 20px;
+    margin: 0 auto;
+
+    max-width: 335px;
+    height: 353px;
+    flex-shrink: 0;
+
+    border-radius: 16px;
+    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
+    box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.10);
+}
+
+.support-funds-title {
+    margin-bottom: 40px;
+    margin-top: 0px;
+
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1.12px;
+    line-height: 1.14;
+
+}
+
+.support-funds-title::after {
+    content: "";
+    display: inline-block;
+    margin-left: 12px;
+
+    width: 20px;
+    height: 32px;
+    background-image: url('../img/funds/herb.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+ .swiper {
+     /* max-width: 255px; */
+    margin-left: 0px;
+     height: 188px;
+ }
+
+
+.fund-item {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.fund-item-number {
+margin-right: 14px;
+
+    color: #FFF;;
+    letter-spacing: -0.56px;
+    line-height: 1.29;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fund-logo {
+color: #FFF;
+filter: brightness(0) invert(1);
+}
+
+.support-funds-btn {
+position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    padding: 6px 6px;
+
+    border-radius: 32px;
+    border: none;
+    background: #FFF;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .support-funds-section {
+        /* display: grid; */
+    }
+
+    .support-funds-container {
+        padding: 24px 40px 14px;
+        height: 472px;
+    }
+
+    .swiper {
+        height: 292px;
+    }
+
+    .support-funds-btn {
+        bottom: 14px;
+
+        width: 38px;
+        height: 38px;
+        border-radius: 38px;
+        padding: 8px 8px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+.support-funds-section {
+    /* display: grid; */
+}
+
+    .support-funds-container {
+        max-width: 356px;
+        padding: 24px 40px;
+        height: 490px;
+    }
+
+    .support-funds-btn {
+        bottom: 24px;
+    }
+}
