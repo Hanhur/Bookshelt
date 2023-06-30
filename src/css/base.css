@@ -1,0 +1,15 @@
+:root
+{
+    --secondary-white-color: #F6F6F6;
+    --primary-text-color: #111111;
+    --button-color: #4F2EE8;
+    --shopping-list-color: #EAC645;
+    --transition-timing: 250ms;
+    --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body 
+{
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--secondary-white-color);
+}
