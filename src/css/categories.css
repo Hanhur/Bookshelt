@@ -1,0 +1,58 @@
+.ul-categories {
+  padding: 0;
+  list-style: none;
+}
+
+.categories h2,
+.categories li {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.active {
+  color: #4f2ee8 !important;
+  font-size: 18px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+.categories button {
+  font-size: 18px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.categories-all {
+  margin-bottom: 32px;
+}
+.categories {
+  width: 348px;
+  height: 472px;
+  overflow-y: auto;
+}
+.categories-osn {
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 18px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+}
+.cteagories-dop {
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 18px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+}
