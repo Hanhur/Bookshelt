@@ -43,22 +43,22 @@ const fundsData = [
   {
     title: 'RAZOM',
     url: 'https://www.razomforukraine.org/',
-    img: null,
+    img: image6,
   },
   {
     title: 'Action against hunger',
     url: 'https://www.actionagainsthunger.org/location/europe/ukraine/',
-    img: null,
+    img: image7,
   },
   {
     title: 'World vision',
     url: 'https://www.wvi.org/emergencies/ukraine',
-    img: null,
+    img: image8,
   },
   {
     title: 'Serhiy Prytula Charity Foundation',
     url: 'https://prytulafoundation.org/en',
-    img: null,
+    img: image9,
   },
 ];
 
