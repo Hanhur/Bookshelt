@@ -3,51 +3,62 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
+import image1 from '../img/funds/1-min.png';
+import image2 from '../img/funds/2-min.png';
+import image3 from '../img/funds/3-min.png';
+import image4 from '../img/funds/4-min.png';
+import image5 from '../img/funds/5-min.png';
+import image6 from '../img/funds/6-min.png';
+import image7 from '../img/funds//7-min.png';
+import image8 from '../img/funds/8-min.png';
+import image9 from '../img/funds/9-min.png';
+
+
 const fundsData = [
   {
     title: 'Save the Children',
     url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
-    img: '../img/funds/funds-png-2/1-min.png',
+    img: image1,
   },
   {
     title: 'Project HOPE',
     url: 'https://www.projecthope.org/country/ukraine/',
-    img: '../img/funds/funds-png-2/2-min.png',
+   img: image2,
   },
   {
     title: 'UNITED24',
     url: 'https://u24.gov.ua/uk',
-    img: '../img/funds/funds-png-2/3-min.png',
+    img: image3,
   },
   {
     title: 'International Medical Corps',
     url: 'https://internationalmedicalcorps.org/country/ukraine/',
-    img: '../img/funds/funds-png-2/4-min.png',
+    img: image4,
   },
   {
     title: 'Medicins Sans Frontieres',
     url: 'https://www.msf.org/ukraine',
-    img: '../img/funds/funds-png-2/5-min.png',
+    img: image5,
   },
   {
     title: 'RAZOM',
     url: 'https://www.razomforukraine.org/',
-    img: '../img/funds/funds-png-2/6-min.png',
+    img: image6,
   },
   {
     title: 'Action against hunger',
     url: 'https://www.actionagainsthunger.org/location/europe/ukraine/',
-    img: '../img/funds/funds-png-2/7-min.png',
+    img: image7,
   },
   {
     title: 'World vision',
     url: 'https://www.wvi.org/emergencies/ukraine',
-    img: '../img/funds/funds-png-2/8-min.png',
+    img: image8,
   },
   {
     title: 'Serhiy Prytula Charity Foundation',
     url: 'https://prytulafoundation.org/en',
-    img: '../img/funds/funds-png-2/9-min.png',
+    img: image9,
   },
 ];
 
@@ -62,7 +73,6 @@ function createSlide(fundsData) {
     appendSlideMarkup(slideMarkup);
   });
 }
-
 
 
 function createSlideMarkup(fund, index) {
