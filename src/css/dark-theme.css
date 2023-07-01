@@ -1,0 +1,16 @@
+body {
+  background: #202024;
+}
+
+header {
+  background: #111;
+  border: 1.5px solid #fff;
+}
+
+.dark-text {
+  color: #fff;
+}
+
+.theme-switcher.dark-theme .slider {
+  left: 68%;
+}
