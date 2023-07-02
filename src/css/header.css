@@ -156,9 +156,11 @@ letter-spacing: -0.56px;
 margin-left: 16px;
 }
 .mob-link:hover {
-  color: #000;
- 
-}
+    color: var(--black-color);
+    border-radius: 36px;
+    box-shadow: 0 0 0 8px var(--yellow-color); 
+    background-color: var(--yellow-color);
+  }
  
 .mob-shopping-link {
   color: var(--white-color);
@@ -173,12 +175,12 @@ margin-left: 16px;
  
 }
 .mob-shopping-link:hover,
-.icon-untitled:hover {
-  color: #000;
-  fill: #000;
-  /* padding: 8px 16px; 
-  background-color: #EAC645;
-    border-radius: 36px;  */
+.mob-shopping-link:hover .icon-untitled {
+  color: var(--black-color);
+  fill: var(--black-color);
+  background-color: var(--yellow-color);
+  border-radius: 36px;
+  box-shadow: 0 0 0 6px var(--yellow-color); 
 }
 
 .mob-shopping-text {
