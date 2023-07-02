@@ -11,6 +11,37 @@ header {
   color: #fff;
 }
 
-.theme-switcher.dark-theme .slider {
+/* .theme-switcher.dark-theme .slider {
   left: 68%;
+} */
+.slider {
+  left: 68%;
+}
+
+.gallery-heading {
+  color: #fff;
+}
+
+.see-more {
+  background: #202024;
+  color: #fff;
+}
+
+.gallery-books-title,
+.shopping-title,
+.choosenbook-title,
+.choosenbook-descr {
+  color: #fff;
+}
+
+.icon-open {
+  stroke: #fff;
+}
+
+.categories-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.categories-link:is(:hover, :focus, :active) {
+  color: #eac645;
 }

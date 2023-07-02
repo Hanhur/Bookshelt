@@ -1,4 +1,4 @@
-const themeSwitcher = document.querySelector('.theme-switcher');
+const themeSwitcher = document.querySelector('.switcher');
 const slider = document.querySelector('.slider');
 
 themeSwitcher.addEventListener('click', function () {
