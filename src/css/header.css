@@ -172,12 +172,13 @@ margin-left: 16px;
 
  
 }
-.mob-shopping-link:hover {
+.mob-shopping-link:hover,
+.icon-untitled:hover {
   color: #000;
   fill: #000;
-  /* padding: 8px 16px;
+  /* padding: 8px 16px; 
   background-color: #EAC645;
-  position: absolute; */
+    border-radius: 36px;  */
 }
 
 .mob-shopping-text {
