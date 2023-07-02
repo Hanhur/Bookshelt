@@ -36,4 +36,4 @@ import"./modulepreload-polyfill-ec808ebb.js";const n=document.getElementById("ch
             alt="load-error"
             class="shopimage-error"
             width="265"
-            height="198"/>`;p.insertAdjacentHTML("beforeend",o)}}function h(e){if(e.target.dataset.removeItem||e.target.closest("[data-remove-item")){let o=e.target.closest("[data-remove-item"),t=e.target.dataset.removeItem||o.dataset.removeItem;const s=document.querySelectorAll(".shopping-item");g(s,t)}}function g(e,o){let t=Array.from(e),s=t.findIndex(r=>r.dataset.dataRemoveIndex===o),i=t.splice(s,1);console.log("removedItem",i),i[0].remove()}
+            height="198"/>`;p.insertAdjacentHTML("beforeend",o)}}function h(e){if(e.target.dataset.removeItem||e.target.closest("[data-remove-item]")){let o=e.target.closest("[data-remove-item]"),t=e.target.dataset.removeItem||o.dataset.removeItem;const s=document.querySelectorAll(".shopping-item");g(s,t)}}function g(e,o){let t=Array.from(e),s=t.findIndex(r=>r.dataset.dataRemoveIndex===o),i=t.splice(s,1);console.log("removedItem",i),i[0].remove()}
