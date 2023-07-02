@@ -1,9 +1,15 @@
-const shoppingListEl = document.getElementById('choosen-books');
+const shoppingListEl = document.getElementById('choosen-bookslist');
 const removeBtnEl = document.getElementById('book-remove');
 const divShoppingEl = document.querySelector('.container-shop');
 
+import bookDum from '../img/shopping/book_dum.jpg';
+import amazonFoto from '../img/shopping/amazon.jpg';
+import applebookFoto from '../img/shopping/applebook.jpg';
+import bookshopFoto from '../img/shopping/bookshop.jpg';
+import errorBooks from '../img/shopping/books.jpg';
+
 let choosenBooks = {
-  src: './img/shopping/book_dum.jpg',
+  src: bookDum,
   title: 'I will find you',
   subtitle: 'Hardcover fiction',
   description:
@@ -33,7 +39,7 @@ function loadFunction() {
                 <h2 class="choosenbook-title">${title}</h2>
                 <button type="button" class="choosenbook-remove" data-remove-item='${i}' >
                   <svg width="16" height="16">
-                    <use href="../img/shopping/spriteShopping.svg#icon-trash"></use>
+                    <use href="./img/shopping/spriteShopping.svg#icon-trash"></use>
                   </svg>
                 </button>
                 <p class="choosenbook-subtitle">${subtitle}</p>
@@ -44,25 +50,26 @@ function loadFunction() {
                   <p class="choosenbook-author">${author}</p>
                 <ul class="market-list">
                     <li class="list">
-                    <a href=""><img src="./img/shopping/amazon.jpg" alt="amazon" /></a>
+                    <a href=""><img src="${amazonFoto}" alt="amazon" /></a>
                   </li>
                   <li class="list">
-                    <a href=""><img src="./img/shopping/applebook.jpg" alt="applebook" /></a>
+                    <a href=""><img src="${applebookFoto}" alt="applebook" /></a>
                   </li>
                   <li class="list">
-                    <a href=""><img src="./img/shopping/bookshop.jpg" alt="bookshop" /></a>
+                    <a href=""><img src="${bookshopFoto}" alt="bookshop" /></a>
                   </li>
+                  </ul>
                 </div>`;
-      container.append(liEl);
+      container.appendChild(liEl);
     }
-    shoppingListEl.append(container);
+    shoppingListEl.appendChild(container);
     shoppingListEl.addEventListener('click', findIndexBook);
   } else {
     let error = `<p class="shopping-error">
             This page is empty, add some books and proceed to order.
           </p>
           <img
-            src="./img/shopping/books.jpg"
+            src="${errorBooks}"
             alt="load-error"
             class="shopimage-error"
             width="265"
@@ -76,7 +83,7 @@ function findIndexBook(event) {
     event.target.dataset.removeItem ||
     event.target.closest('[data-remove-item')
   ) {
-    let missClick = event.target.closest('[data-remove-item');
+    let missClick = event.target.closest('[data-remove-item]');
     let id = event.target.dataset.removeItem || missClick.dataset.removeItem;
     const listItems = document.querySelectorAll('.shopping-item');
     removeClickedBook(listItems, id);

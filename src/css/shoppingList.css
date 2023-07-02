@@ -53,7 +53,7 @@ image {
 }
 
 .shopping-list {
-  margin-top: 40px;
+  padding: 0;
 }
 
 .shopping-item {
@@ -74,6 +74,8 @@ image {
 }
 
 .choosenbook-title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #111;
   font-size: 16px;
   line-height: 1.13;
@@ -83,7 +85,7 @@ image {
 
 .choosenbook-remove {
   position: absolute;
-  right: 0;
+  right: 4px;
   top: 0;
   display: flex;
   justify-content: center;
@@ -97,6 +99,7 @@ image {
 
 .choosenbook-subtitle {
   margin-top: 4px;
+  margin-bottom: 0;
   color: #b4afaf;
   font-size: 12px;
   line-height: 1.17;
@@ -107,6 +110,7 @@ image {
   min-width: 193px;
   min-height: 68px;
   margin-top: 8px;
+  margin-bottom: 0;
   color: #111;
   font-size: 14px;
   line-height: 1.29;
@@ -114,21 +118,26 @@ image {
 }
 
 .choosenbook-author {
-  margin-top: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #b4afaf;
   font-size: 12px;
   line-height: 1.17;
+  font-style: italic;
+  font-weight: 400;
   letter-spacing: -0.48px;
 }
 
 .market-wrapper {
+  height: 16px;
+  margin-top: 16px;
   display: flex;
-  align-items: end;
-  justify-content: space-between;
+  align-items: flex-start;
+  /* justify-content: space-between; */
 }
 
 .market-list {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
 }
