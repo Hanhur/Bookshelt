@@ -9,7 +9,7 @@ import image3 from '../img/funds/3-min.png';
 import image4 from '../img/funds/4-min.png';
 import image5 from '../img/funds/5-min.png';
 import image6 from '../img/funds/6-min.png';
-import image7 from '../img/funds//7-min.png';
+import image7 from '../img/funds/7-min.png';
 import image8 from '../img/funds/8-min.png';
 import image9 from '../img/funds/9-min.png';
 
