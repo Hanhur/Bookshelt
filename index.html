@@ -16,13 +16,112 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/Bookshelt/assets/index-d3060f2a.js"></script>
+    <script type="module" crossorigin src="/Bookshelt/assets/index-8ac57535.js"></script>
     <link rel="modulepreload" crossorigin href="/Bookshelt/assets/shopping-cef474b0.js">
-    <link rel="stylesheet" href="/Bookshelt/assets/index-588caaf2.css">
+    <link rel="stylesheet" href="/Bookshelt/assets/index-65c78b22.css">
   </head>
   <body>
     <!-- Іван - Header -->
+    <header class="header">
+    <div class="container header-container">
+        <nav class="header-navigation">
+            <a class="header-logo" href="../partials/header.html">
+                <svg class="header-logo-icon" width="24" height="24">
+                    <use href="./Images/icons.svg#icon-logo"></use>
+                </svg>
+            <a class="header-logo" href="../partials/header.html">
+                <svg class="header-logo-icon" width="77" height="13">
+                    <use href="./Images/icons.svg#icon-bookshelf"></use>
+                </svg>
+            </a>
+            <ul class="header-list">
+                <li class="header-item list">
+                    <a class="header-link link" href="../partials/header.html">HOME</a>
+                </li>
+                <li class="header-item list">
+                    <a class="header-link link" href="../shoppinglist.html">SHOPPING LIST</a>
+                </li>
+            </ul>
+        </nav>
+         
+        <div class="switcher"> 
+            <div class="slider" id="theme-slider"></div> 
+        </div>
+         <!-- MENU-MOBILE -->
+        <button type="button" class="menu-open" data-menu-open>
+            <svg class="icon-open"  width="28" height="28" >
+                <use href="../img/symbol-defs.svg#icon-menu-open"></use>
+            </svg>
+        </button>
+    </div>
+    <section class="mob-menu is-hidden" data-menu>
+        
+        <div class="mobile-menu">
+            <div class="container mob-menu-container">
+                <div class="mob-menu-leveling">
+                    <nav class="header-navigation">
+                        <a class="header-logo" href="../partials/header.html">
+                            <svg class="header-logo-icon" width="24" height="24">
+                                <use href="../img/symbol-defs.svg#icon-logo"></use>
+                            </svg>
+                        <a class="header-logo" href="../partials/header.html">
+                            <svg class="header-logo-icon" width="77" height="13">
+                                <use href="../img/symbol-defs.svg#icon-bookshelf"></use>
+                            </svg>
+                        </a>
+                            
+                    </nav>
+                    <div class="switcher"> 
+                        <div class="slider" id="theme-slider"></div> 
+                    </div>
+                    
+                    <button type="button" class="menu-open" data-menu-close>
+                        <svg class="icon-open"  width="28" height="28" >
+                            <use href="../img/symbol-defs.svg#icon-menu-close"></use>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <section class="menu-content">
+                    <div class="menu-container">
+                      
+                        <div>
+                            <p class="menu-title">Welcome</p>
+                                <div class="menu-section">
+                                    <div class="mob-content">
+                                        <ul class="mob-list list">
+                                            <li class="mob-item list">
+                                                <a class="mob-link link carrent" href="../partials/header.html">HOME</a>
+                                            </li>
+                                            <li class="mob-item list">
+                                                <a class="mob-shopping-link link" href="../shoppinglist.html">
+                                                    <p class="mob-shopping-text">SHOPPING LIST</p>
+                                                    <svg class="icon-untitled"  width="20" height="20" >
+                                                        <use href="../img/symbol-defs.svg#icon-untitled"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="img-menu-div">
+                               <section class="section-img-menu">
+                                  <img class="img-menu" src="../img/menu-images/Group6.png" alt="A picture with books">
+                               </section>
+                           </div>
+                       </div>
+                   </div>
+                </section>
+            </div>
+    </section>
+</header>
+                
+        
+        
     
+                   
+                   
 
     <!-- Анастасія - Scrum master,  Support Ukraine -->
     <section class="support-funds-section">
@@ -33,7 +132,7 @@
     </div>
     <button type="button" class="support-funds-btn js-scroll-down">
       <svg class="scroll-down-icon" width="12" height="12">
-        <use href="/Bookshelt/assets/symbol-defs-268fd19c.svg#icon-arrow"></use>
+        <use href="/Bookshelt/assets/symbol-defs-30cc9fae.svg#icon-arrow"></use>
       </svg>
     </button>
   </div>
@@ -49,7 +148,7 @@
     <button type="button" class="btn-up btn-up_hide">
       <div class="bakcgroud-svg"> 
         <svg class="icon-svg " width="24" height="24">
-          <use href="/Bookshelt/assets/symbol-defs-268fd19c.svg#icon-material-symbols"></use>
+          <use href="/Bookshelt/assets/symbol-defs-30cc9fae.svg#icon-material-symbols"></use>
         </svg>  
        </div>
   
