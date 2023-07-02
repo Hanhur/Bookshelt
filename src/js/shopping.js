@@ -3,7 +3,7 @@ const removeBtnEl = document.getElementById('book-remove');
 const divShoppingEl = document.querySelector('.container-shop');
 
 let choosenBooks = {
-  src: '../img/shopping/book_dum.jpg',
+  src: './img/shopping/book_dum.jpg',
   title: 'I will find you',
   subtitle: 'Hardcover fiction',
   description:
@@ -44,13 +44,13 @@ function loadFunction() {
                   <p class="choosenbook-author">${author}</p>
                 <ul class="market-list">
                     <li class="list">
-                    <a href=""><img src="../img/shopping/amazon.jpg" alt="amazon" /></a>
+                    <a href=""><img src="./img/shopping/amazon.jpg" alt="amazon" /></a>
                   </li>
                   <li class="list">
-                    <a href=""><img src="../img/shopping/applebook.jpg" alt="applebook" /></a>
+                    <a href=""><img src="./img/shopping/applebook.jpg" alt="applebook" /></a>
                   </li>
                   <li class="list">
-                    <a href=""><img src="../img/shopping/bookshop.jpg" alt="bookshop" /></a>
+                    <a href=""><img src="./img/shopping/bookshop.jpg" alt="bookshop" /></a>
                   </li>
                 </div>`;
       container.append(liEl);
@@ -62,7 +62,7 @@ function loadFunction() {
             This page is empty, add some books and proceed to order.
           </p>
           <img
-            src="../img/shopping/books.jpg"
+            src="./img/shopping/books.jpg"
             alt="load-error"
             class="shopimage-error"
             width="265"
