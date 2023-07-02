@@ -74,9 +74,9 @@ function loadFunction() {
 function findIndexBook(event) {
   if (
     event.target.dataset.removeItem ||
-    event.target.closest('[data-remove-item')
+    event.target.closest('[data-remove-item]')
   ) {
-    let missClick = event.target.closest('[data-remove-item');
+    let missClick = event.target.closest('[data-remove-item]');
     let id = event.target.dataset.removeItem || missClick.dataset.removeItem;
     const listItems = document.querySelectorAll('.shopping-item');
     removeClickedBook(listItems, id);
