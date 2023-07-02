@@ -1,0 +1,146 @@
+ul {
+    list-style-type: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .gallery-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery-books {
+    position: relative;
+  }
+  
+  .gallery-heading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #111;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -1.28px;
+  }
+  
+  .gallery-heading-span {
+    color: #4f2ee8;
+    font-size: 32px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -1.28px;
+  }
+  
+  .gallery-page {
+    display: block;
+    padding: 0;
+    width: 335px;
+    margin-bottom: 40px;
+  }
+  
+  .gallery-category-heading {
+    margin-bottom: 18px;
+    color: #b4afaf;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  
+  .category-page-list {
+    display: flex;
+  }
+  
+  .card-container {
+    margin-bottom: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .gallery-books-title {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    width: 335px;
+    color: #111;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+  }
+  
+  .gallery-books-author {
+    color: #b4afaf;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.48px;
+  }
+  
+  .see-more {
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 14px 28px;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 2px solid #4f2ee8;
+    color: #111;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.14px;
+    text-transform: uppercase;
+  }
+  
+  .gallery-book-cards {
+    margin-bottom: 40px;
+  }
+  
+  .btn-up {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(79, 46, 232, 0.3);
+  }
+  
+  .bakcgroud-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #4f2ee8;
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
