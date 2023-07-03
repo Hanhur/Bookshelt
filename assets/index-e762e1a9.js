@@ -35,7 +35,7 @@ Notiflix needs to be appended to the "<`+m+'>" element, but you called it before
   </div>
   <h2 class="gallery-books-title">${n.books[0].title}</h2>
   <p class="gallery-books-author">${n.books[0].author}</p>
-  <button type="button" id="${n.books[0].list_name}" class="see-more">see more</button></li>`}).join("")}function Ks(e){const t=e.currentTarget.id;console.log(t)}const qs=document.querySelector(".gallery-books");let pt;qs.addEventListener("click",Js);function Js(e){console.log(),e.target.localName==="button"&&(pt=e.target.getAttribute("id"),_s(pt))}function _s(e){rn(e).then(t=>{const i=t.data[0].list_name;if(t==={}){he.Notify.failure`(Sorry, there are no ${e} books.)`;return}Yt.innerHTML=$s(t),Qt.innerHTML=Xs(i)})}function $s(e){return e.data.slice(0,7).map(n=>{if(!n.book_image){const r="../img/bestsellers/cover.jpg";return`<li id="${n._id}" class = "gallery-book-cards">
+  <button type="button" id="${n.books[0].list_name}" class="see-more">see more</button></li>`}).join("")}function Ks(e){const t=e.currentTarget.id;console.log(t)}const qs=document.querySelector(".gallery-books");let pt;qs.addEventListener("click",Js);function Js(e){console.log(),e.target.localName==="button"&&(pt=e.target.getAttribute("id"),_s(pt))}function _s(e){rn(e).then(t=>{const i=t.data[0].list_name;if(t===!t.lenght){he.Notify.failure`(Sorry, there are no ${e} books.)`;return}Yt.innerHTML=$s(t),Qt.innerHTML=Xs(i)})}function $s(e){return e.data.slice(0,7).map(n=>{if(!n.book_image){const r="../img/bestsellers/cover.jpg";return`<li id="${n._id}" class = "gallery-book-cards">
   <div class = "card-container">
    <img class="gallery-books-img" src="${r}" alt="${n.title}" loading="lazy">
        </div>
