@@ -79,7 +79,7 @@ function onMoreBtnClick(e) {
 function addCardsByCategory(name) {
   selectedCategory(name).then(booksArr => {
     const titleCategory = booksArr.data[0].list_name;
-    if (booksArr === {}) {
+    if (booksArr === !booksArr.lenght) {
       Notify.failure`(Sorry, there are no ${name} books.)`;
       return;
     }
