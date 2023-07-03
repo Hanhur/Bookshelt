@@ -10,7 +10,7 @@
 
 .general-container {
     width: 100%;
-    max-width: 335px;
+    /* max-width: 335px; */
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -91,7 +91,7 @@
 }
 .mob-menu {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   width: 100%;
   height: 100%;
@@ -110,6 +110,8 @@
 .mob-menu-leveling {
   display: flex;
   align-items: baseline;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .mob-menu-container {
   border-radius: 0px 0px 8px 8px;
