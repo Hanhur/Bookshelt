@@ -14,13 +14,13 @@
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 .menu-container{
     width: 100%;
     max-width: 335px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 .list {
   list-style: none;
