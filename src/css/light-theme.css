@@ -16,5 +16,10 @@
 } */
 
 body {
-  background-color: aliceblue;
+  background-color: var(--secondary-white-color);
 }
+
+.general-header {
+  background-color: #fff;
+}
+
