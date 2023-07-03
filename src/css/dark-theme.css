@@ -5,6 +5,11 @@ body {
 header {
   background: #111;
   border: 1.5px solid #fff;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.header-logo-icon{
+  fill: #F3F3F3;
 }
 
 .dark-text {
