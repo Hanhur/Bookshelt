@@ -8,25 +8,9 @@ const categoriesList = document.querySelector('.categories-list');
 let categoryValue;
 
 
-categoriesList.addEventListener('click', handleCategoryClick);
 
-function handleCategoryClick(event) {
-  const selectedButton = event.target;
-  const category = selectedButton.textContent;
-
-  galleryTitle.innerHTML = "";
-  booksList.innerHTML = "";
-
-if (category !== 'All categories') {
-    addCardsByCategory(category);
-  } else {
-    allCateCategoriesCheck(category);
-  }
-  }
-
-function allCateCategoriesCheck(category) {
-  if (category === 'All categories') {
-    topBooks()
+function createBestSellers() {
+  topBooks()
       .then(data => {
         if (data.length === 0) {
           Notify.failure('Sorry, there are no best sellers books.');
@@ -45,24 +29,30 @@ function allCateCategoriesCheck(category) {
         console.log(error);
       });
   }
+createBestSellers()
+
+
+categoriesList.addEventListener('click', handleCategoryClick);
+
+function handleCategoryClick(event) {
+  const selectedButton = event.target;
+  const category = selectedButton.textContent;
+
+  galleryTitle.innerHTML = "";
+  booksList.innerHTML = "";
+
+if (category !== 'All categories') {
+    addCardsByCategory(category);
+  } else {
+    allCateCategoriesCheck(category);
+  }
+  }
+
+function allCateCategoriesCheck(category) {
+  if (category === 'All categories') {
+    createBestSellers()
+  }
 }
-
-
-
-// topBooks().then(data => {
-//   if (data.length === 0) {
-//     Notify.failure('Sorry, there are no best sellers books. ');
-//     return;
-//   }
-
-//   galleryTitle.insertAdjacentHTML('beforeend', createTitleMarkup());
-//   booksList.insertAdjacentHTML('beforeend', createBookListMarkup(data));
-
-//   const galleryList = document.querySelectorAll('.gallery-book-cards');
-//   galleryList.forEach(element => {
-//     element.addEventListener('click', onBtnOpen);
-//   });
-// });
 
 function createTitleMarkup() {
   return 'Best Sellers <span class="gallery-heading-span">Books</span>';
