@@ -1,6 +1,5 @@
 import { topBooks, selectedCategory } from './api.js';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-// import { modalOpen } from './popUp';
 
 const booksList = document.querySelector('.js-gallery-books');
 const galleryTitle = document.querySelector('.gallery-heading');
@@ -17,7 +16,7 @@ topBooks().then(data => {
   const galleryList = document.querySelectorAll('.gallery-book-cards');
   galleryList.forEach(element => {
     element.addEventListener('click', onBtnOpen);
-  });
+  })
 });
 
 function createTitleMarkup() {
@@ -141,3 +140,5 @@ const btnUp = {
 };
 
 btnUp.addEventListener();
+
+
