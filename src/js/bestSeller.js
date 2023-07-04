@@ -4,21 +4,65 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const booksList = document.querySelector('.js-gallery-books');
 const galleryTitle = document.querySelector('.gallery-heading');
+const categoriesList = document.querySelector('.categories-list');
+let categoryValue;
 
-topBooks().then(data => {
-  if (data.length === 0) {
-    Notify.failure('Sorry, there are no best sellers books. ');
-    return;
+
+categoriesList.addEventListener('click', handleCategoryClick);
+
+function handleCategoryClick(event) {
+  const selectedButton = event.target;
+  const category = selectedButton.textContent;
+
+  galleryTitle.innerHTML = "";
+  booksList.innerHTML = "";
+
+if (category !== 'All categories') {
+    addCardsByCategory(category);
+  } else {
+    allCateCategoriesCheck(category);
+  }
   }
 
-  galleryTitle.insertAdjacentHTML('beforeend', createTitleMarkup());
-  booksList.insertAdjacentHTML('beforeend', createBookListMarkup(data));
+function allCateCategoriesCheck(category) {
+  if (category === 'All categories') {
+    topBooks()
+      .then(data => {
+        if (data.length === 0) {
+          Notify.failure('Sorry, there are no best sellers books.');
+          return;
+        }
 
-  const galleryList = document.querySelectorAll('.gallery-book-cards');
-  galleryList.forEach(element => {
-    element.addEventListener('click', onBtnOpen);
-  });
-});
+        galleryTitle.insertAdjacentHTML('beforeend', createTitleMarkup());
+        booksList.insertAdjacentHTML('beforeend', createBookListMarkup(data));
+
+        const galleryList = document.querySelectorAll('.gallery-book-cards');
+        galleryList.forEach(element => {
+          element.addEventListener('click', onBtnOpen);
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+}
+
+
+
+// topBooks().then(data => {
+//   if (data.length === 0) {
+//     Notify.failure('Sorry, there are no best sellers books. ');
+//     return;
+//   }
+
+//   galleryTitle.insertAdjacentHTML('beforeend', createTitleMarkup());
+//   booksList.insertAdjacentHTML('beforeend', createBookListMarkup(data));
+
+//   const galleryList = document.querySelectorAll('.gallery-book-cards');
+//   galleryList.forEach(element => {
+//     element.addEventListener('click', onBtnOpen);
+//   });
+// });
 
 function createTitleMarkup() {
   return 'Best Sellers <span class="gallery-heading-span">Books</span>';
@@ -30,7 +74,12 @@ function changeTitleMarkup(title) {
 
 function createBookListMarkup(data) {
   const totalObject = data.data.slice(0, 4);
+
   const createCards = totalObject.map(ven => {
+ if (!ven.books[0]) {
+      return ''; 
+    }
+
     if (!ven.books[0].book_image) {
       const bookImage = '../img/bestsellers/cover.jpg';
       return `<li id="${ven.books[0]._id}" class = "gallery-book-cards">
@@ -64,9 +113,9 @@ function onBtnOpen(evt) {
 }
 
 const eventLister = document.querySelector('.gallery-books');
-let categoryValue;
 
 eventLister.addEventListener('click', onMoreBtnClick);
+
 function onMoreBtnClick(e) {
   console.log();
   if (e.target.localName === 'button') {
@@ -77,16 +126,25 @@ function onMoreBtnClick(e) {
 }
 
 function addCardsByCategory(name) {
-  selectedCategory(name).then(booksArr => {
-    const titleCategory = booksArr.data[0].list_name;
-    if (booksArr === !booksArr.lenght) {
-      Notify.failure`(Sorry, there are no ${name} books.)`;
-      return;
-    }
-    (booksList.innerHTML = createSelectCategoryBooks(booksArr)),
-      (galleryTitle.innerHTML = changeTitleMarkup(titleCategory));
-  });
+  selectedCategory(name)
+    .then(booksArr => {
+      if (!booksArr || !booksArr.data || booksArr.data.length === 0) {
+        booksList.innerHTML = '';
+        galleryTitle.innerHTML = changeTitleMarkup('');
+        return;
+      }
+
+      const firstBook = booksArr.data[0];
+      const titleCategory = firstBook && firstBook.list_name ? firstBook.list_name : '';
+
+      booksList.innerHTML = createSelectCategoryBooks(booksArr);
+      galleryTitle.innerHTML = changeTitleMarkup(titleCategory);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 }
+
 
 function createSelectCategoryBooks(arr) {
   const totalObject = arr.data.slice(0, 7);
