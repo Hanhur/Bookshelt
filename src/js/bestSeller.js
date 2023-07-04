@@ -2,6 +2,7 @@ import { topBooks, selectedCategory } from './api.js';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { openModal } from './pop-up';
 
+
 const booksList = document.querySelector('.js-gallery-books');
 const galleryTitle = document.querySelector('.gallery-heading');
 const categoriesList = document.querySelector('.categories-list');
@@ -35,6 +36,12 @@ function createBestSellers() {
 createBestSellers()
 
 
+
+  const galleryList = document.querySelectorAll('.gallery-book-cards');
+  galleryList.forEach(element => {
+    element.addEventListener('click', onBtnOpen);
+  })
+});
 categoriesList.addEventListener('click', handleCategoryClick);
 
 function handleCategoryClick(event) {
@@ -185,3 +192,4 @@ const btnUp = {
 };
 
 btnUp.addEventListener();
+
