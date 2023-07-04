@@ -379,9 +379,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   align-items: center;
 }
-.icon-user {
-  
-}
 .header-user-text {
   color: var(--white-color);
   font-size: 22px;
