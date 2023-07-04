@@ -24,7 +24,6 @@ function createBestSellers() {
         const galleryList = document.querySelectorAll('.gallery-book-cards');
         galleryList.forEach(element => {
           element.addEventListener('click', onBtnOpen);
-        });
          galleryList.forEach(element => {
     element.addEventListener('click', openModal);
   });
