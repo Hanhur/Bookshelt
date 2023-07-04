@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+    .positioning-wrapper {
+        display: flex;
+        gap: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .categories-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .support-funds-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .body-positioning-wrapper {
+            display: flex;
+            gap: 40px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        
+    .positioning-wrapper {
+       flex-direction: column;
+        gap: 86px;
+        padding-left: 0;
+        padding-right: 0; 
+    }
+
+    .categories-container{
+        margin-left: 0;
+    }
+
+    .support-funds-section{
+        padding-top: 0;
+    }
+}
