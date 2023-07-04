@@ -1,0 +1,52 @@
+body {
+  background: #202024;
+}
+
+header {
+  background: #111;
+  border: 1.5px solid #fff;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.header-logo-icon{
+  fill: #F3F3F3;
+}
+
+.dark-text {
+  color: #fff;
+}
+
+/* .theme-switcher.dark-theme .slider {
+  left: 68%;
+} */
+.slider {
+  left: 68%;
+}
+
+.gallery-heading {
+  color: #fff;
+}
+
+.see-more {
+  background: #202024;
+  color: #fff;
+}
+
+.gallery-books-title,
+.shopping-title,
+.choosenbook-title,
+.choosenbook-descr {
+  color: #fff;
+}
+
+.icon-open {
+  stroke: #fff;
+}
+
+.categories-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.categories-link:is(:hover, :focus, :active) {
+  color: #eac645;
+}

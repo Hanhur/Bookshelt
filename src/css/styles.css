@@ -7,10 +7,12 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./supportUkraine.css');
-@import url('./shoppingList');
+@import url('./shoppingList.css');
 @import url('./popUp.css');
 @import url('./header.css');
 @import url('./darkMode.css');
 @import url('./categories.css');
 @import url('./bestSellersOtherList.css');
-@import url('./allBackendRequests.css');
+@import url('./positioning.css');
+@import url('./light-theme.css');
+@import url('./dark-theme.css');
