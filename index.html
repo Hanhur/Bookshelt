@@ -18,9 +18,9 @@
     />
     
     <link rel="stylesheet" title="theme" href="#" />
-    <script type="module" crossorigin src="/Bookshelt/assets/index-dc130c38.js"></script>
+    <script type="module" crossorigin src="/Bookshelt/assets/index-e24b210a.js"></script>
     <link rel="modulepreload" crossorigin href="/Bookshelt/assets/modulepreload-polyfill-ec808ebb.js">
-    <link rel="stylesheet" href="/Bookshelt/assets/index-37affa37.css">
+    <link rel="stylesheet" href="/Bookshelt/assets/index-6b528687.css">
   </head>
 
   <body>
@@ -32,89 +32,118 @@
                 <svg class="header-logo-icon" width="24" height="24">
                     <use href="../img/symbol-defs.svg#icon-logo"></use>
                 </svg>
-                <a class="header-logo" href="../index.html">
-                    <svg class="header-logo-icon" width="77" height="13">
-                        <use href="../img/symbol-defs.svg#icon-bookshelf"></use>
-                    </svg>
-                </a>
-                <ul class="header-list">
-                    <li class="header-item list">
-                        <a class="header-link link" href="../index.html">HOME</a>
-                    </li>
-                    <li class="header-item list">
-                        <a class="header-link link" href="../shoppinglist.html">SHOPPING LIST</a>
-                    </li>
-                </ul>
+            </a>    
+            <a class="header-logo" href="../index.html">
+                <svg class="header-logo-icon" width="77" height="13">
+                    <use href="../img/symbol-defs.svg#icon-bookshelf"></use>
+                </svg>
             </a>
+            <ul class="header-list">
+                <li class="header-item list">
+                    <a class="header-link link current" href="../index.html">HOME</a>
+                </li>
+                <li class="header-item list">
+                    <a class="header-link-shoping link" href="../shoppinglist.html">
+                        <p class="header-shopping-text">SHOPPING LIST</p>
+                            <svg class="icon-untitled-header"  width="20" height="20" >
+                                <use href="../img/symbol-defs.svg#icon-untitled"></use>
+                            </svg>
+                    </a>
+                </li>
+            </ul>
         </nav>
-        <div class="switcher">
-            <div class="slider" id="theme-slider"></div>
+         
+        <div class="header-content-right">
+            <div class="switcher"> 
+                <div class="slider" id="theme-slider"></div> 
+            </div>
+           <div class="header-container-user">
+               <div class="icon-user-content">
+                    <svg class="icon-user"  width="19" height="19" >
+                        <use href="../img/symbol-defs.svg#icon-user"></use>
+                    </svg>
+               </div>
+                <p class="header-user-text">User</p>
+           </div>
+                
         </div>
-        <!-- MENU-MOBILE -->
-        <button type="button" class="menu-open" data-menu-open>
-            <svg class="icon-open" width="28" height="28">
+         <!-- MENU-MOBILE -->
+         <button type="button" class="menu-open" data-menu-open>
+            <svg class="icon-open"  width="28" height="28" >
                 <use href="../img/symbol-defs.svg#icon-menu-open"></use>
             </svg>
         </button>
     </div>
     <section class="mob-menu is-hidden" data-menu>
-        <div class="mobile-menu">
-            <div class="general-container mob-menu-container">
-                <div class="mob-menu-leveling">
-                    <nav class="header-navigation">
-                        <a class="header-logo" href="../index.html">
-                            <svg class="header-logo-icon" width="24" height="24">
-                                <use href="../img/symbol-defs.svg#icon-logo"></use>
-                            </svg>
+        
+            <div class="mobile-menu">
+                <div class="general-container mob-menu-container">
+                    <div class="mob-menu-leveling">
+                        <nav class="header-navigation">
+                            <a class="header-logo" href="../index.html">
+                                <svg class="header-logo-icon" width="24" height="24">
+                                    <use href="../img/symbol-defs.svg#icon-logo"></use>
+                                </svg>
+                            </a>    
                             <a class="header-logo" href="../index.html">
                                 <svg class="header-logo-icon" width="77" height="13">
                                     <use href="../img/symbol-defs.svg#icon-bookshelf"></use>
                                 </svg>
                             </a>
-                        </a>
-                    </nav>
-                    <div class="switcher">
-                        <div class="slider" id="theme-slider"></div>
-                    </div>
-                    <button type="button" class="menu-open" data-menu-close>
-                        <svg class="icon-open" width="28" height="28">
-                            <use href="../img/symbol-defs.svg#icon-menu-close"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <section class="menu-content">
-                <div class="menu-container">
-                    <div>
-                        <p class="menu-title">Welcome</p>
-                        <div class="menu-section">
-                            <div class="mob-content">
-                                <ul class="mob-list list">
-                                    <li class="mob-item list">
-                                        <a class="mob-link link carrent" href="../index.html">HOME</a>
-                                    </li>
-                                    <li class="mob-item list">
-                                        <a class="mob-shopping-link link" href="../shoppinglist.html">
-                                            <p class="mob-shopping-text">SHOPPING LIST</p>
-                                            <svg class="icon-untitled" width="20" height="20">
-                                                <use href="../img/symbol-defs.svg#icon-untitled"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
+                        </nav>
+                        <div class="switcher"> 
+                            <div class="slider" id="theme-slider"></div> 
                         </div>
-                    </div>
-                    <div class="img-menu-div">
-                        <section class="section-img-menu">
-                            <img class="img-menu" src="../img/menu-images/Group6.png" alt="A picture with books">
-                        </section>
+                    
+                        <button type="button" class="menu-open" data-menu-close>
+                            <svg class="icon-open"  width="28" height="28" >
+                                <use href="../img/symbol-defs.svg#icon-menu-close"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
-            </section>
-        </div>
-    </section>
-</header>
+                <section class="menu-content">
+                    <div class="menu-container">
+                      
+                           <div>
+                               <p class="menu-title">Welcome</p>
+                                    <div class="menu-section">
+                                        <div class="mob-content">
+                                            <ul class="mob-list list">
+                                                <li class="mob-item list">
+                                                    <a class="mob-link link" href="../index.html">HOME</a>
+                                                </li>
+                                                <li class="mob-item list">
+                                                    <a class="mob-shopping-link link" href="../shoppinglist.html">
+                                                        <p class="mob-shopping-text">SHOPPING LIST</p>
+                                                        <svg class="icon-untitled"  width="20" height="20" >
+                                                            <use href="../img/symbol-defs.svg#icon-untitled"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                           </div>
+                           <div class="img-menu-div">
+                               
+                                  <img class="img-menu" src="../img/menu-images/Group6.png" alt="A picture with books">
+                               
+                           </div>
+                       </div>
+                   </div>
+                   
+                   
+               </section>
+               
+           </div>
+       
+       
+   </section>
+   
+</header> 
+
     <div class="body-positioning-wrapper">
       <div class="positioning-wrapper">
         <!-- Тимур - Categories -->
@@ -183,8 +212,9 @@
 </div> -->
 
     <!-- Роман - Shopping list -->
-    <a href="./shoppinglist.html">link to Shopping Page</a>
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/Bookshelt/Bookshelt/src/Shopping/shoppingList.html' -->
+    ENOENT: no such file or directory, open '/home/runner/work/Bookshelt/Bookshelt/src/Shopping/shoppingList.html'
+
     
-  </body>
+</body>
 </html>
+
