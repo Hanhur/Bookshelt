@@ -1,6 +1,6 @@
 import { topBooks, selectedCategory } from './api.js';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-// import { modalOpen } from './popUp';
+import { openModal } from './pop-up';
 
 const booksList = document.querySelector('.js-gallery-books');
 const galleryTitle = document.querySelector('.gallery-heading');
@@ -24,6 +24,9 @@ function createBestSellers() {
         galleryList.forEach(element => {
           element.addEventListener('click', onBtnOpen);
         });
+         galleryList.forEach(element => {
+    element.addEventListener('click', openModal);
+  });
       })
       .catch(error => {
         console.log(error);
