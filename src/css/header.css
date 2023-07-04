@@ -137,6 +137,8 @@ height: 100%;
 .mob-menu-leveling {
 display: flex;
 align-items: baseline;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .mob-menu-container {
 border-radius: 0px 0px 8px 8px;
