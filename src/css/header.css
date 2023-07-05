@@ -321,8 +321,9 @@ justify-content: space-between;
 }
 .header-link:hover{
 border-radius: 36px;
-box-shadow: 0 0 0 10px var(--yellow-color); 
+box-shadow: 0 0 0 12px var(--yellow-color); 
 background-color: var(--yellow-color);
+font-weight: 700;
 
 transition-property: background-color,box-shadow,border-radius;
 transition-duration: 250ms;
@@ -349,7 +350,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .header-link-shoping:hover{
   background-color: var(--yellow-color);
   border-radius: 36px;
-  box-shadow: 0 0 0 10px var(--yellow-color);
+  box-shadow: 0 0 0 12px var(--yellow-color);
+  font-weight: 700;
 
   transition-property: background-color,box-shadow,border-radius;
   transition-duration: 250ms;
