@@ -31,8 +31,8 @@ function createBestSellers() {
       .catch(error => {
         console.log(error);
       });
-  }
-createBestSellers()
+  });
+createBestSellers();
 
 
 
@@ -40,7 +40,7 @@ createBestSellers()
   galleryList.forEach(element => {
     element.addEventListener('click', onBtnOpen);
   })
-});
+};
 categoriesList.addEventListener('click', handleCategoryClick);
 
 function handleCategoryClick(event) {
