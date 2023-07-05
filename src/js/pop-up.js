@@ -50,7 +50,7 @@ let container = document.querySelector('.choosenbook-popup-wrapper');
 function fillBookCard(id) {
   detalsInformBook(id)
     .then(book => {
-      const { book_image, title, description, author, subtitle, buy_links } = book.data;
+      const { book_image, title, description, author, list_name, buy_links } = book.data;
       let bookMarkup = createBookMarkup(book.data);
       appendBookMarkup(bookMarkup);
 
@@ -61,7 +61,7 @@ function fillBookCard(id) {
         title,
         description,
         author,
-        subtitle,
+        list_name,
         buy_links,
       };
       localStorage.setItem('selectedBook', JSON.stringify(bookObject));
