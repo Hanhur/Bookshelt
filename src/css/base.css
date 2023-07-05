@@ -14,3 +14,6 @@ body
     background-color: var(--secondary-white-color);
 }
 
+ .hidden-section {
+     display: none;
+ }
