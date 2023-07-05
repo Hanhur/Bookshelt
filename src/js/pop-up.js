@@ -45,7 +45,6 @@ let container = document.querySelector('.choosenbook-popup-wrapper');
 
 function fillBookCard(id) {
     detalsInformBook(id).then(book => {
-         console.dir(book.data)
         const { book_image, title, description, author, subtitle, buy_links } = book.data;
         let bookMarkup = createBookMarkup(book.data);
         appendBookMarkup(bookMarkup);
@@ -115,7 +114,6 @@ function handleAddClick() {
         if (!isBookAlreadyAdded) {
             shoppingList.push(selectedBook);
             updateShoppingListButton(true);
-            displayShoppingListMessage();
         } else {
             removeBookFromShoppingList(selectedBook.id);
             updateShoppingListButton(false);
@@ -124,12 +122,19 @@ function handleAddClick() {
 }
 
 function updateShoppingListButton(isAdded) {
-    if (isAdded) {
+  if (isAdded) {
         addSpoppinList.textContent = "Remove from the shopping list";
          shoppingListMessage.innerHTML = "<p>Congratulations! You have added the book to the shopping list. To delete, press the button 'Remove from the shopping list'.</p>";
-    } else {
+  } else {
         addSpoppinList.textContent = "Add to the shopping list";
         shoppingListMessage.innerHTML = "";
+    }
+}
+
+function removeBookFromShoppingList(bookId) {
+    const index = shoppingList.findIndex(book => book.id === bookId);
+    if (index !== -1) {
+        shoppingList.splice(index, 1);
     }
 }
 
