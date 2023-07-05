@@ -308,6 +308,7 @@ justify-content: space-between;
   display: flex;
   gap: 32px;
   margin-left: 40px;
+  align-items: baseline;
 }
 .header-link{
   color: var(--black-color);
@@ -330,6 +331,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .header-link-shoping{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .icon-untitled-header{
   fill: var(--black-color);
