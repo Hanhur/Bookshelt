@@ -2,6 +2,19 @@ image {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container-shop {
   margin: 0 auto;
   width: 100%;
@@ -16,6 +29,7 @@ image {
 /* -------------------shopping-section-------------------- */
 .shopping-title {
   margin-top: 40px;
+  margin-bottom: 40px;
   color: #111;
   font-style: normal;
   font-weight: 700;
@@ -44,6 +58,7 @@ image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 302px;
 }
 
 .shopping-list {
@@ -71,6 +86,7 @@ image {
   margin-top: 0;
   margin-bottom: 0;
   color: #111;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.13;
   letter-spacing: -0.64px;
@@ -106,6 +122,7 @@ image {
 }
 
 .choosenbook-descr {
+  width: 100%;
   max-width: 193px;
   max-height: 70px;
   margin-top: 8px;
@@ -132,6 +149,7 @@ image {
   height: 16px;
   margin-top: 16px;
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -143,7 +161,40 @@ image {
 
 @media screen and (min-width: 768px) {
   .container-shop {
-    max-width: 375px;
-    padding: 0 20px;
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .shopping-item {
+    padding: 24px;
+  }
+
+  .choosenbook-wrapper {
+    width: 100%;
+  }
+
+  .choosenbook-image {
+    margin-right: 24px;
+  }
+
+  .choosenbook-descr {
+    margin-top: 14px;
+    max-width: 508px;
+    max-height: 53px;
+  }
+
+  .market-wrapper {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-shop {
+    max-width: 1044px;
+    padding: 0 24px;
+  }
+
+  .choosenbook-descr {
+    max-width: 808px;
   }
 }

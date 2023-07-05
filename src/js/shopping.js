@@ -5,36 +5,23 @@ import bookshopFoto from '../img/shopping/bookshop.jpg';
 import errorBooks from '../img/shopping/books.jpg';
 import deleteIcon from '../img/shopping/trash.png';
 
-// ---------------TESTDATA----------------------------
-let choosenBooks = {
-  src: bookDum,
-  title: 'I will find you',
-  subtitle: 'Hardcover fiction',
-  description:
-    'David Burroughs was once a devoted father to his three-year-old son Matthew, living a dream life just a short drive away from the working-class suburb where he and his wife, Cheryl, first fell in love--until one fateful night when David woke suddenly to discover Matthew had been murdered while David was asleep just down the hall. ',
-  author: 'Harlan Coben',
-};
-localStorage.setItem('choosenBooks', JSON.stringify(choosenBooks));
-// -------------------------------------------------------
-
 const divShoppingEl = document.querySelector('.container-shop');
 
 // ---------------Rendering function---------------
-
-window.addEventListener('load', loadFunction);
+document.addEventListener('DOMContentLoaded', loadFunction);
 function loadFunction() {
-  let container = document.createElement('ul');
-  container.classList.add('shopping-list');
-  container.id = 'choosen-bookslist';
-  if (localStorage.getItem('choosenBooks') !== null) {
-    let bookInfo = JSON.parse(localStorage.getItem('choosenBooks'));
-    const { src, title, subtitle, description, author } = bookInfo;
-    for (let i = 0; i <= 5; i++) {
-      let liEl = document.createElement('li');
-      liEl.dataset.removeIndex = i;
-      liEl.classList.add('shopping-item', 'list');
-      liEl.innerHTML = `<img
-                src="${src}"
+  if (localStorage.getItem('selectedBook') !== null) {
+    let container = document.createElement('ul');
+    container.classList.add('shopping-list');
+    container.id = 'choosen-bookslist';
+    let bookInfo = JSON.parse(localStorage.getItem('selectedBook'));
+    bookInfo.forEach(
+      ({ book_image, title, description, author, buy_links }) => {
+        let liEl = document.createElement('li');
+        liEl.dataset.removeIndex = i;
+        liEl.classList.add('shopping-item', 'list');
+        liEl.innerHTML = `<img
+                src="${book_image}"
                 alt="book cover unavailable"
                 class="choosenbook-image"
                 width="100"
@@ -63,8 +50,9 @@ function loadFunction() {
                   </li>
                   </ul>
                 </div>`;
-      container.appendChild(liEl);
-    }
+        container.appendChild(liEl);
+      }
+    );
     divShoppingEl.appendChild(container);
     const shoppingListEl = document.getElementById('choosen-bookslist');
     shoppingListEl.addEventListener('click', findIndexBook);
