@@ -15,7 +15,10 @@ const shoppingListMessage = document.querySelector(".shopping-list-message");
 
 
 
-const openModal = function () {
+const openModal = function (evt) {
+  if(evt.target.localName ==='button'){
+    return
+  }
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
     document.body.classList.add("modal-open");
