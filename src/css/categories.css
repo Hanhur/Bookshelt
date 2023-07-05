@@ -56,15 +56,18 @@ font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
-.categories-section {
-        /* width: 100%;
-        margin: 0 auto;
-        padding: 40px 20px 0px 20px; */
+
+.categories-link {
+        font-size: 18px;
     }
+
+   .categories-link:is(:hover, :focus, :active) {
+    font-size: 19px;
+   }
 
     .categories-container {
 
-        max-width: 337px;
+        width: 337px;
         height: 472px;
     }
 
@@ -81,11 +84,6 @@ font-size: 16px;
 }
 
 @media screen and (min-width: 1200px) {
-    .categories-section {
-        /* width: 100%;
-        margin: 0 auto;
-        padding: 40px 20px 0px 20px; */
-    }
 
     .categories-container {
         max-width: 356px;
