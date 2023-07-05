@@ -128,7 +128,7 @@ function createSelectCategoryBook (arr) {
 <div class = "card-container">
  <img class="gallery-books-img" src="${bookImage}" alt="${arr.title}" loading="lazy">
  <div class="actions-card">
-            <p class="overlay">quick view</p>
+            <p class="overlay-card">QUICK VIEW</p>
           </div> 
      </div>
  <h2 class="gallery-books-title">${arr.title}</h2>
@@ -139,7 +139,7 @@ function createSelectCategoryBook (arr) {
 <div class = "card-container">
 <img class="gallery-books-img" src="${arr.book_image}" alt="${arr.title}" loading="lazy" width="435" height="485">
 <div class="actions-card">
-            <p class="overlay">quick view</p>
+            <p class="overlay-card">QUICK VIEW</p>
           </div> 
 </div><h2 class="gallery-books-title">${arr.title}</h2><p class="gallery-books-author">${arr.author}</p>
 <button type="button" id="${arr.list_name}" class="see-more">see more</button></li>`;
