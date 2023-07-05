@@ -18,9 +18,9 @@
     />
     
     <link rel="stylesheet" title="theme" href="#" />
-    <script type="module" crossorigin src="/Bookshelt/assets/index-e0464b60.js"></script>
-    <link rel="modulepreload" crossorigin href="/Bookshelt/assets/modulepreload-polyfill-ec808ebb.js">
-    <link rel="stylesheet" href="/Bookshelt/assets/index-e512f007.css">
+    <script type="module" crossorigin src="/Bookshelt/assets/index-7fed04fd.js"></script>
+    <link rel="modulepreload" crossorigin href="/Bookshelt/assets/books-7bd96aa4.js">
+    <link rel="stylesheet" href="/Bookshelt/assets/index-fd54c85a.css">
   </head>
 
   <body>
@@ -201,7 +201,19 @@
     </div>
 
     <!-- Віталій - Pop up(modal при натисканні на 1 книгу) -->
-    
+    <div class="overlay hidden js-overlay-modal"></div>
+
+<div class="book-modal hidden js-modal">
+  <svg class="close-icon js-modal-close" width="24" height="24">
+    <use href="../img/symbol-defs.svg#icon-close"></use>
+  </svg>
+  <div class="choosenbook-popup-wrapper"></div>
+  <div class="btn-wrapper">
+    <button class="add-btn">add to shopping list</button>
+    <div class="shopping-list-message"></div>
+  </div>
+</div>
+
 
     <!-- Костя - All backend requests -->
     
