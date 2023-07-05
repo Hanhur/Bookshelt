@@ -46,7 +46,7 @@ Notiflix needs to be appended to the "<`+m+'>" element, but you called it before
 <div class = "card-container">
  <img class="gallery-books-img" src="${t}" alt="${e.title}" loading="lazy">
  <div class="actions-card">
-            <p class="overlay">quick view</p>
+            <p class="overlay-card">QUICK VIEW</p>
           </div> 
      </div>
  <h2 class="gallery-books-title">${e.title}</h2>
@@ -55,7 +55,7 @@ Notiflix needs to be appended to the "<`+m+'>" element, but you called it before
 <div class = "card-container">
 <img class="gallery-books-img" src="${e.book_image}" alt="${e.title}" loading="lazy" width="435" height="485">
 <div class="actions-card">
-            <p class="overlay">quick view</p>
+            <p class="overlay-card">QUICK VIEW</p>
           </div> 
 </div><h2 class="gallery-books-title">${e.title}</h2><p class="gallery-books-author">${e.author}</p>
 <button type="button" id="${e.list_name}" class="see-more">see more</button></li>`}const Sr={el:document.querySelector(".btn-up"),show(){this.el.classList.remove("btn-up_hide")},hide(){this.el.classList.add("btn-up_hide")},addEventListener(){window.addEventListener("scroll",()=>{(window.scrollY||document.documentElement.scrollTop)>400?this.show():this.hide()}),document.querySelector(".btn-up").onclick=()=>{window.scrollTo({top:0,left:0,behavior:"smooth"})}}};Sr.addEventListener();(()=>{const e={openMenuBtn:document.querySelector("[data-menu-open]"),closeMenuBtn:document.querySelector("[data-menu-close]"),menu:document.querySelector("[data-menu]")};e.openMenuBtn.addEventListener("click",t),e.closeMenuBtn.addEventListener("click",t);function t(){e.menu.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}})();const it=document.querySelector(".switcher");document.querySelector(".slider");it.addEventListener("click",function(){vr()});function vr(){const t=it.classList.toggle("dark-theme")?"dark-theme":"light-theme";_t(t),Cr(t)}function _t(e){document.querySelector('[title="theme"]').setAttribute("href",`css/${e}.css`)}function Cr(e){localStorage.setItem("theme",e)}const De=localStorage.getItem("theme");De&&(it.classList.add(De),_t(De));export{rr as a,or as b,ar as c,lr as e};
