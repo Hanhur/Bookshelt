@@ -1,25 +1,114 @@
-.switcher {
-  width: 40px;
-  height: 24px;
-  background: linear-gradient(
-    to right,
-    rgba(79, 46, 232, 1),
-    rgba(220, 220, 220, 1)
-  );
-  position: relative;
-  border-radius: 20px;
-  cursor: pointer;
+@media screen and (min-width: 320px) {
+  .slider.dark {
+    left: 68%;
+  }
+
+  body.dark,
+  .book-modal.dark {
+    background: #202024;
+  }
+
+  .general-header.dark,
+  .mob-menu-container.dark,
+  .mob-menu-leveling.dark {
+    background: #111;
+    border: 1.5px solid #fff;
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  .header-logo-icon.dark {
+    fill: #f3f3f3;
+  }
+
+  .see-more.dark {
+    background: #202024;
+    color: #fff;
+  }
+
+  .gallery-heading.dark,
+  .gallery-books-title.dark,
+  .shopping-title.dark,
+  .choosenbook-title.dark,
+  .choosenbook-descr.dark,
+  .header-shopping-text.dark,
+  .add-btn.dark,
+  .choosenbook-popup-title.dark,
+  .choosenbook-popup-descr.dark {
+    color: #fff;
+  }
+
+  .icon-open.dark,
+  .close-icon.dark {
+    stroke: #fff;
+  }
+
+  .icon-untitled-header.dark {
+    stroke: rgba(17, 17, 17, 1);
+  }
+
+  .categories-link.dark {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .categories-link.dark:hover,
+  .categories-link.dark:focus,
+  .categories-link.dark:active {
+    color: #eac645;
+  }
+}
+.slider.dark {
+  left: 68%;
 }
 
-.slider {
-  width: 24px;
-  height: 24px;
-  background-color: #fff;
+body.dark,
+.book-modal.dark {
+  background: #202024;
+}
 
-  border-radius: 50%;
-  position: absolute;
-  left: 30%;
-  transform: translateX(-50%);
-  transition: left 0.3s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.general-header.dark,
+.mob-menu-container.dark,
+.mob-menu-leveling.dark {
+  background: #111;
+  border: 1.5px solid #fff;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.header-logo-icon.dark {
+  fill: #f3f3f3;
+}
+
+.see-more.dark {
+  background: #202024;
+  color: #fff;
+}
+
+.gallery-heading.dark,
+.gallery-books-title.dark,
+.shopping-title.dark,
+.choosenbook-title.dark,
+.choosenbook-descr.dark,
+.header-shopping-text.dark,
+.add-btn.dark,
+.choosenbook-popup-title.dark,
+.choosenbook-popup-descr.dark {
+  color: #fff;
+}
+
+.icon-open.dark,
+.close-icon.dark {
+  stroke: #fff;
+}
+
+.icon-untitled-header.dark {
+  stroke: rgba(17, 17, 17, 1);
+}
+
+.categories-link.dark {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.categories-link.dark:hover,
+.categories-link.dark:focus,
+.categories-link.dark:active {
+  color: #eac645;
 }
