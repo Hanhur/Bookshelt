@@ -335,7 +335,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
 }
 .icon-untitled-header{
-  fill: var(--black-color);
+  stroke: var(--black-color);
 }
 .header-shopping-text{
   color: var(--black-color);
