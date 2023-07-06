@@ -5,4 +5,3 @@ import './js/bestSeller';
 import './js/menu';
 import './js/pop-up';
 import './js/dark-light-mode';
-import './js/shopping.js'
