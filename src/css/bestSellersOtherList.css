@@ -18,6 +18,15 @@ img {
 .gallery-books {
   position: relative;
   display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 40px;
+  }
 }
 
 .gallery-heading {
@@ -37,6 +46,10 @@ img {
     line-height: 1.08;
     letter-spacing: -1.92px;
   }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 40px;
+    }
 }
 
 .gallery-heading-span {
@@ -75,7 +88,7 @@ img {
     height: 316px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     width: 180px;
     height: 256px;
   }
@@ -83,13 +96,13 @@ img {
 
 .gallery-books-img {
   @media screen and (min-width: 768px) {
-    /* width: 218px;
-    height: 316px; */
+    width: 218px;
+    height: 316px;
   }
 
-  @media screen and (min-width: 1440px) {
-    /* width: 180px;
-    height: 256px; */
+  @media screen and (min-width: 1200px) {
+    width: 180px;
+    height: 256px;
   }
 }
 
@@ -154,11 +167,6 @@ img {
   background-color: var(--button-color);
 }
 
-.gallery-book-cards {
-  margin-bottom: 40px;
-
-  
-}
 
 .btn-up {
   right: 20px;
