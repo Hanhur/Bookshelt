@@ -24,10 +24,6 @@ function checkScreenSize() {
 // ---------------Rendering function---------------
 document.addEventListener('DOMContentLoaded', loadFunction);
 function loadFunction() {
-  console.log(
-    'SHOPPING LIST',
-    JSON.parse(localStorage.getItem('shoppingList')).length
-  );
   if (
     localStorage.getItem('shoppingList') !== null &&
     JSON.parse(localStorage.getItem('shoppingList')).length !== 0
