@@ -15,6 +15,10 @@ image {
   overflow: hidden;
 }
 
+.hidden-section {
+  display: none;
+}
+
 .container-shop {
   margin: 0 auto;
   width: 100%;
@@ -27,6 +31,10 @@ image {
 }
 
 /* -------------------shopping-section-------------------- */
+.shopping {
+  width: 100%;
+}
+
 .shopping-title {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -80,6 +88,7 @@ image {
 
 .choosenbook-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .choosenbook-title {
@@ -87,7 +96,7 @@ image {
   margin-bottom: 0;
   color: #111;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.13;
   letter-spacing: -0.64px;
   text-transform: uppercase;
@@ -95,7 +104,7 @@ image {
 
 .choosenbook-remove {
   position: absolute;
-  right: 4px;
+  right: 0;
   top: 0;
   display: flex;
   justify-content: center;
@@ -119,6 +128,9 @@ image {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.36px;
+  width: 155px;
+  height: 14px;
+  overflow: hidden;
 }
 
 .choosenbook-descr {
@@ -186,15 +198,35 @@ image {
   .market-wrapper {
     margin-top: 48px;
   }
+
+  .shopimage-error {
+    width: 322px;
+    height: 241px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container-shop {
     max-width: 1044px;
-    padding: 0 24px;
+    padding: 0;
+  }
+
+  .body-positioning-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  .shopping-item {
+    width: 100%;
+    max-width: 796px;
   }
 
   .choosenbook-descr {
     max-width: 808px;
+  }
+
+  .shop-positioning {
+    margin-top: 40px;
+    width: 356px;
   }
 }

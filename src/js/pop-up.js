@@ -2,45 +2,45 @@ import bookDum from '../img/shopping/book_dum.jpg';
 import amazonFoto from '../img/shopping/amazon.jpg';
 import applebookFoto from '../img/shopping/applebook.jpg';
 import bookshopFoto from '../img/shopping/bookshop.jpg';
-import errorBooks from '../img/shopping/books.jpg';
+import errorBooks from '../img/shopping/books.png';
 import { detalsInformBook } from './api';
 
-const modal = document.querySelector(".js-modal");
+const modal = document.querySelector('.js-modal');
 const closeModalBtn = document.querySelector('.js-modal-close');
-const overlay = document.querySelector(".overlay");
-const addSpoppinList = document.querySelector(".add-btn");
-const shoppingListMessage = document.querySelector(".shopping-list-message");
+const overlay = document.querySelector('.overlay');
+const addSpoppinList = document.querySelector('.add-btn');
+const shoppingListMessage = document.querySelector('.shopping-list-message');
 
 const openModal = function (evt) {
   if (evt.target.localName === 'button') {
     return;
   }
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-  document.body.classList.add("modal-open");
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+  document.body.classList.add('modal-open');
 
   const bookId = this.id;
   fillBookCard(bookId);
 
   const selectedBook = JSON.parse(localStorage.getItem('selectedBook'));
   if (selectedBook && selectedBook.id === bookId) {
-    addSpoppinList.textContent = "Remove from the shopping list";
+    addSpoppinList.textContent = 'Remove from the shopping list';
   } else {
-    addSpoppinList.textContent = "Add to the shopping list";
+    addSpoppinList.textContent = 'Add to the shopping list';
   }
 };
 
 const closeModal = function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-  document.body.classList.remove("modal-open");
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+  document.body.classList.remove('modal-open');
 };
 
-closeModalBtn.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+closeModalBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
 
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     closeModal();
   }
 });
@@ -50,7 +50,8 @@ let container = document.querySelector('.choosenbook-popup-wrapper');
 function fillBookCard(id) {
   detalsInformBook(id)
     .then(book => {
-      const { book_image, title, description, author, list_name, buy_links } = book.data;
+      const { book_image, title, description, author, list_name, buy_links } =
+        book.data;
       let bookMarkup = createBookMarkup(book.data);
       appendBookMarkup(bookMarkup);
 
@@ -71,7 +72,13 @@ function fillBookCard(id) {
     });
 }
 
-function createBookMarkup({ book_image, title, description, author, buy_links }) {
+function createBookMarkup({
+  book_image,
+  title,
+  description,
+  author,
+  buy_links,
+}) {
   return `<img
     src="${book_image}"
     alt="book cover unavailable"
@@ -109,7 +116,9 @@ const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
 function handleAddClick() {
   const selectedBook = JSON.parse(localStorage.getItem('selectedBook'));
   if (selectedBook) {
-    const isBookAlreadyAdded = shoppingList.some(book => book.id === selectedBook.id);
+    const isBookAlreadyAdded = shoppingList.some(
+      book => book.id === selectedBook.id
+    );
     if (!isBookAlreadyAdded) {
       shoppingList.push(selectedBook);
       updateShoppingListButton(true);
@@ -124,11 +133,12 @@ function handleAddClick() {
 
 function updateShoppingListButton(isAdded) {
   if (isAdded) {
-    addSpoppinList.textContent = "Remove from the shopping list";
-    shoppingListMessage.innerHTML = "<p>Congratulations! You have added the book to the shopping list. To delete, press the button 'Remove from the shopping list'.</p>";
+    addSpoppinList.textContent = 'Remove from the shopping list';
+    shoppingListMessage.innerHTML =
+      "<p>Congratulations! You have added the book to the shopping list. To delete, press the button 'Remove from the shopping list'.</p>";
   } else {
-    addSpoppinList.textContent = "Add to the shopping list";
-    shoppingListMessage.innerHTML = "";
+    addSpoppinList.textContent = 'Add to the shopping list';
+    shoppingListMessage.innerHTML = '';
   }
 }
 
