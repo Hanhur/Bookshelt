@@ -1,141 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Bookshelt/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     
     
-  <script type="module" crossorigin src="/Bookshelt/assets/shoppinglist-1e079c8b.js"></script>
-  <link rel="modulepreload" crossorigin href="/Bookshelt/assets/dark-light-mode-17b77cf2.js">
-  <link rel="stylesheet" href="/Bookshelt/assets/dark-light-mode-de29a844.css">
-  <link rel="stylesheet" href="/Bookshelt/assets/shoppinglist-f30d44c6.css">
-</head>
+    <script type="module" crossorigin src="/Bookshelt/assets/shoppinglist-bc00a41e.js"></script>
+    <link rel="modulepreload" crossorigin href="/Bookshelt/assets/dark-light-mode-3acc7910.js">
+    <link rel="stylesheet" href="/Bookshelt/assets/dark-light-mode-a34d662b.css">
+    <link rel="stylesheet" href="/Bookshelt/assets/shoppinglist-c5cfca45.css">
+  </head>
 
-<body>
+  <body>
     <header class="general-header">
-        <div class="general-container header-container">
-            <nav class="header-navigation">
-                <a class="header-logo" href="./partials/header.html">
-                    <svg class="header-logo-icon" width="24" height="24">
-                        <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-logo"></use>
-                    </svg>
-                    <a class="header-logo" href="./partials/header.html">
-                        <svg class="header-logo-icon" width="77" height="13">
-                            <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-bookshelf"></use>
-                        </svg>
-                    </a>
-                    <ul class="header-list">
-                        <li class="header-item list">
-                            <a class="header-link link" href="./partials/header.html">HOME</a>
-                        </li>
-                        <li class="header-item list">
-                            <a class="header-link link" href="./shoppinglist.html">SHOPPING LIST</a>
-                        </li>
-                    </ul>
-                </a>
-            </nav>
-            <div class="switcher">
-                <div class="slider" id="theme-slider"></div>
-            </div>
-            <!-- MENU-MOBILE -->
-            <button type="button" class="menu-open" data-menu-open>
-                <svg class="icon-open" width="28" height="28">
-                    <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-menu-open"></use>
+      <div class="general-container header-container">
+        <nav class="header-navigation">
+          <a class="header-logo" href="./index.html">
+            <svg class="header-logo-icon" width="24" height="24">
+              <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <a class="header-logo" href="./index.html">
+            <svg class="header-logo-icon" width="77" height="13">
+              <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-bookshelf"></use>
+            </svg>
+          </a>
+          <ul class="header-list">
+            <li class="header-item list">
+              <a class="header-link link current" href="./index.html">HOME</a>
+            </li>
+            <li class="header-item list">
+              <a class="header-link-shoping link" href="./shoppinglist.html">
+                <p class="header-shopping-text">SHOPPING LIST</p>
+                <svg class="icon-untitled-header" width="20" height="20">
+                  <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-untitled"></use>
                 </svg>
-            </button>
-        </div>
-        <section class="mob-menu is-hidden" data-menu>
-            <div class="mobile-menu">
-                <div class="container mob-menu-container">
-                    <div class="mob-menu-leveling">
-                        <nav class="header-navigation">
-                            <a class="header-logo" href="./partials/header.html">
-                                <svg class="header-logo-icon" width="24" height="24">
-                                    <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-logo"></use>
-                                </svg>
-                                <a class="header-logo" href="./partials/header.html">
-                                    <svg class="header-logo-icon" width="77" height="13">
-                                        <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-bookshelf"></use>
-                                    </svg>
-                                </a>
-                            </a>
-                        </nav>
-                        <div class="switcher">
-                            <div class="slider" id="theme-slider"></div>
-                        </div>
-                        <button type="button" class="menu-open" data-menu-close>
-                            <svg class="icon-open" width="28" height="28">
-                                <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-menu-close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <section class="menu-content">
-                    <div class="menu-container">
-                        <div>
-                            <p class="menu-title">Welcome</p>
-                            <div class="menu-section">
-                                <div class="mob-content">
-                                    <ul class="mob-list list">
-                                        <li class="mob-item list">
-                                            <a class="mob-link link carrent" href="./partials/header.html">HOME</a>
-                                        </li>
-                                        <li class="mob-item list">
-                                            <a class="mob-shopping-link link" href="./shoppinglist.html">
-                                                <p class="mob-shopping-text">SHOPPING LIST</p>
-                                                <svg class="icon-untitled" width="20" height="20">
-                                                    <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-untitled"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-menu-div">
-                            <section class="section-img-menu">
-                                <img class="img-menu" src="/Bookshelt/assets/Group6-3a638d50.png" alt="A picture with books">
-                            </section>
-                        </div>
-                    </div>
-                </section>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-content-right">
+          <div class="switcher">
+            <div class="slider" id="theme-slider"></div>
+          </div>
+          <div class="header-container-user">
+            <div class="icon-user-content">
+              <svg class="icon-user" width="19" height="19">
+                <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-user"></use>
+              </svg>
             </div>
-        </section>
+            <p class="header-user-text">User</p>
+          </div>
+        </div>
+        <!-- MENU-MOBILE -->
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="icon-open" width="28" height="28">
+            <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <section class="mob-menu is-hidden" data-menu>
+        <div class="mobile-menu">
+          <div class="general-container mob-menu-container">
+            <div class="mob-menu-leveling">
+              <nav class="header-navigation">
+                <a class="header-logo" href="./index.html">
+                  <svg class="header-logo-icon" width="24" height="24">
+                    <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-logo"></use>
+                  </svg>
+                </a>
+                <a class="header-logo" href="./index.html">
+                  <svg class="header-logo-icon" width="77" height="13">
+                    <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-bookshelf"></use>
+                  </svg>
+                </a>
+              </nav>
+              <div class="switcher">
+                <div class="slider" id="theme-slider"></div>
+              </div>
+              <button type="button" class="menu-open" data-menu-close>
+                <svg class="icon-open" width="28" height="28">
+                  <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <section class="menu-content">
+            <div class="menu-container">
+              <div>
+                <p class="menu-title">Welcome</p>
+                <div class="menu-section">
+                  <div class="mob-content">
+                    <ul class="mob-list list">
+                      <li class="mob-item list">
+                        <a class="mob-link link" href="./index.html">HOME</a>
+                      </li>
+                      <li class="mob-item list">
+                        <a
+                          class="mob-shopping-link link"
+                          href="./shoppinglist.html"
+                        >
+                          <p class="mob-shopping-text">SHOPPING LIST</p>
+                          <svg class="icon-untitled" width="20" height="20">
+                            <use
+                              href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-untitled"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="img-menu-div">
+                <img
+                  class="img-menu"
+                  src="/Bookshelt/assets/Group6-3a638d50.png"
+                  alt="A picture with books"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </header>
     <main>
-        <section class="support-funds-section">
-            <div class="support-funds-container">
-                <h2 class="support-funds-title">Support Ukraine</h2>
-                <div class="swiper">
-                    <ul class="swiper-wrapper funds-list"></ul>
-                </div>
-                <button type="button" class="support-funds-btn js-scroll-down">
-                    <svg class="scroll-down-icon" width="12" height="12">
-                        <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-arrow"></use>
-                    </svg>
-                </button>
+      <div class="body-positioning-wrapper">
+        <div class="positioning-wrapper">
+          <section class="support-funds-section">
+            <div class="support-funds-container shop-positioning">
+              <h2 class="support-funds-title">Support Ukraine</h2>
+              <div class="swiper">
+                <ul class="swiper-wrapper funds-list"></ul>
+              </div>
+              <button type="button" class="support-funds-btn js-scroll-down">
+                <svg class="scroll-down-icon" width="12" height="12">
+                  <use href="/Bookshelt/assets/symbol-defs-dfadd7a5.svg#icon-arrow"></use>
+                </svg>
+              </button>
             </div>
-        </section>
+          </section>
+        </div>
         <section class="shopping">
-            <div class="container-shop">
-                <h1 class="shopping-title">
-                    Shopping <span class="listw-wrapper">List</span>
-                </h1>
-            </div>
+          <div class="container-shop">
+            <h1 class="shopping-title">
+              Shopping <span class="listw-wrapper">List</span>
+            </h1>
+          </div>
         </section>
+      </div>
     </main>
     
     
     
-</body>
-
+  </body>
 </html>
