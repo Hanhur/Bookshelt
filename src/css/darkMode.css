@@ -112,3 +112,11 @@ body.dark,
 .categories-link.dark:active {
   color: #eac645;
 }
+
+.shopping-error.dark {
+  color: #fff;
+}
+
+.shopping-item.dark {
+  background-color: #111;
+}

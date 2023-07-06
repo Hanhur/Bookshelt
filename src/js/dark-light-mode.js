@@ -34,7 +34,7 @@ themeSwitcher.addEventListener('click', toggleTheme);
 function toggleTheme() {
   document.body.classList.toggle('dark');
   const elements = document.querySelectorAll(
-    '.slider, .general-header, .header-logo-icon, .gallery-heading, .see-more, .gallery-books-title, .shopping-title, .choosenbook-title, .choosenbook-descr, .icon-open, .categories-link, .header-shopping-text, .book-modal, .close-icon, .add-btn, .choosenbook-popup-title, .choosenbook-popup-descr, .icon-untitled-header, .mob-menu-leveling'
+    '.slider, .general-header, .header-logo-icon, .gallery-heading, .see-more, .gallery-books-title, .shopping-title, .choosenbook-title, .choosenbook-descr, .icon-open, .categories-link, .header-shopping-text, .book-modal, .close-icon, .add-btn, .choosenbook-popup-title, .choosenbook-popup-descr, .icon-untitled-header, .mob-menu-leveling, .shopping-error, .shopping-item'
   );
   elements.forEach(function (element) {
     if (document.body.classList.contains('dark')) {
@@ -54,7 +54,7 @@ const activeTheme = localStorage.getItem('theme');
 if (activeTheme === 'dark') {
   document.body.classList.add('dark');
   const elements = document.querySelectorAll(
-    '.slider, .general-header, .header-logo-icon, .gallery-heading, .see-more, .gallery-books-title, .shopping-title, .choosenbook-title, .choosenbook-descr, .icon-open, .categories-link, .header-shopping-text, .book-modal, .close-icon, .add-btn, .choosenbook-popup-title, .choosenbook-popup-descr, .icon-untitled-header, .mob-menu-leveling'
+    '.slider, .general-header, .header-logo-icon, .gallery-heading, .see-more, .gallery-books-title, .shopping-title, .choosenbook-title, .choosenbook-descr, .icon-open, .categories-link, .header-shopping-text, .book-modal, .close-icon, .add-btn, .choosenbook-popup-title, .choosenbook-popup-descr, .icon-untitled-header, .mob-menu-leveling, .shopping-error, .shopping-item'
   );
   elements.forEach(function (element) {
     element.classList.add('dark');
