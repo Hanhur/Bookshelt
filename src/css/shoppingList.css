@@ -88,7 +88,7 @@ image {
 
 .choosenbook-wrapper {
   position: relative;
-  width: 100%;
+  width: 146px;
 }
 
 .choosenbook-title {
@@ -171,6 +171,12 @@ image {
   gap: 8px;
 }
 
+@media screen and (min-width: 340px) {
+  .choosenbook-wrapper {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container-shop {
     max-width: 768px;
@@ -187,6 +193,10 @@ image {
 
   .choosenbook-image {
     margin-right: 24px;
+  }
+
+  .choosenbook-title {
+    font-size: 16px;
   }
 
   .choosenbook-descr {
