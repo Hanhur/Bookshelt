@@ -37,7 +37,11 @@ function loadFunction() {
       liEl.dataset.removeIndex = book.id;
       liEl.classList.add('shopping-item', 'list');
       liEl.innerHTML = `<img
-                src="${book.book_image}"
+                src="${
+                  book.book_image
+                    ? book.book_image
+                    : '../img/shopping/no_cover.jpg'
+                }"
                 alt="book cover unavailable"
                 class="choosenbook-image"
                 width="100"
@@ -45,24 +49,30 @@ function loadFunction() {
               />
               <div class="choosenbook-wrapper">
                 <h2 class="choosenbook-title">${book.title}</h2>
-                <button type="button" class="choosenbook-remove" data-remove-item='${book.id}' >
+                <button type="button" class="choosenbook-remove" data-remove-item='${
+                  book.id
+                }' >
                   <img src="${deleteIcon}" alt="" width='16'/>
                 </button>
                 <p class="choosenbook-subtitle">${book.list_name}</p>
                 <p class="choosenbook-descr">
-                ${book.description}
+                ${
+                  book.description
+                    ? book.description
+                    : 'No description available.'
+                }
                 </p>
                 <div class="market-wrapper">
                   <p class="choosenbook-author">${book.author}</p>
                 <ul class="market-list">
                     <li class="list">
-                    <a href=""><img src="${amazonFoto}" alt="amazon" width='32'/></a>
+                    <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer"><img src="${amazonFoto}" alt="amazon" width='32'/></a>
                   </li>
                   <li class="list">
-                    <a href=""><img src="${applebookFoto}" alt="applebook" width='16'/></a>
+                    <a href="https://www.apple.com/apple-books/" target="_blank" rel="noopener noreferrer"><img src="${applebookFoto}" alt="applebook" width='16'/></a>
                   </li>
                   <li class="list">
-                    <a href=""><img src="${bookshopFoto}" alt="bookshop" width='16'/></a>
+                    <a href="https://bookshop.org/" target="_blank" rel="noopener noreferrer"><img src="${bookshopFoto}" alt="bookshop" width='16'/></a>
                   </li>
                   </ul>
                 </div>`;
